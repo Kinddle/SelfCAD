@@ -1,0 +1,37 @@
+.footer {
+	background-color: #11729b;
+	h4 {
+	    color: #fff;
+	    font-weight: 700;
+	}
+	p, span {
+		color: #fff;
+	}
+	p {
+		font-weight: 700;
+		font-size: 14px;
+	}
+	span {
+		font-size: 12px;
+		font-weight: 300;
+	}
+	.divider {
+		border-bottom: 1px solid #fff;
+		margin: 5px 0;
+	}
+	.quick-links {
+		list-style: none;
+		margin-left: 29%;
+		li {
+			a {
+				color: #fff;
+				font-size: 14px;
+			}
+		}
+	}
+	.copyright {
+		font-weight: 400;
+		text-align: right;
+		margin: 40px 0;
+	}
+}

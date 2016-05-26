@@ -1,0 +1,164 @@
+.header {
+	background-color: #12719a;
+	height: 70px;
+	.logo {
+		@media screen and (max-width: 767px) {
+            margin-top: 5px;
+		}
+		@media (min-width: 768px) and (max-width:991px) {
+        	margin-top: 4px;
+        }
+	}
+	.navbar {
+		border: none;
+        padding: 10px 0;
+        .navbar-toggle {
+        	border: 1px solid #fff;
+        	.icon-bar {
+        		background-color: #fff;
+        	}
+        }
+        .navbar-collapse {
+        	@media (min-width: 768px) and (max-width:991px) {
+        		padding: 0;
+        	}
+        }
+        .collapse.in {
+        	background-color: #12719a;
+        	margin-top: 9px;
+            .open {
+				.dropdown-menu {
+					li {
+						a { 
+							color: #fff;
+							&:hover,
+							&:focus {
+								background-color: #fff;
+								color: #12719a;
+							}
+						}
+					}
+				}
+			}
+			.navbar-text {
+				display: inline-block;
+                float: left;
+			}
+			.selfcad {
+				display: inline-block;
+				padding-left: 8px;
+			}
+			.form-group {
+				display: inline-block;
+			}
+			.navbar-form {
+				box-shadow: none;
+			}
+			.dropdown-toggle {
+				padding: 0 15px;
+			}
+        }
+	}
+	.navbar-nav {
+		li {
+			color: #fff;
+			font-size: 14px;
+			@media (min-width: 768px) and (max-width:991px) {
+        		font-size: 12px;
+        	}
+			a {
+				color: #fff;
+				padding-top: 0;
+			    padding-bottom: 0;
+			    margin-top: -10px;
+			    line-height: 70px;
+			}
+			.navbar-text {
+				margin-left: 7px;
+                margin-right: 7px;
+			}
+			.user-photo {
+               margin-top: 5px;
+			}
+		}
+		.dropdown {
+			.dropdown-menu {
+				min-width: 100%;
+				padding: 8px 0 0 0;
+				border: none;
+				box-shadow: none;
+				li {
+					line-height: 36px;
+					a {
+                        
+					}
+				}
+			}
+			.dropdown-toggle {
+				padding: 0 30px;
+				&:hover,
+				&:focus,
+				&:active {
+					background-color: #fff;
+					color: #12719a;
+				}
+			}
+		}
+		.open {
+			.dropdown-menu {
+				li {
+					a { 
+						line-height: 36px;
+					    height: 36px;
+						color: #12719a;
+						&:hover,
+						&:focus {
+							background-color: #12719a;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	.navbar-form {
+		@media (min-width: 768px) and (max-width:991px) {
+        	padding: 0;
+        }
+        .form-group {
+        	position: relative;
+        	img {
+        		position: absolute;
+        		left: 8px;
+                top: 9px;
+        	}
+        	.form-control {
+        		border-radius: 0;
+        		padding-left: 30px;
+        		font-size: 11px;
+        		border-right: 1px solid #29566a;
+        		width: 214px;
+        		@media (min-width: 768px) and (max-width:991px) {
+        		    width: 100%;
+        	    }
+        	}
+        	::-webkit-input-placeholder {color:#29576b;}
+			::-moz-placeholder          {color:#29576b;}/* Firefox 19+ */
+			:-moz-placeholder           {color:#29576b;}/* Firefox 18- */
+			:-ms-input-placeholder      {color:#29576b;}
+			::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+			::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+			:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+			:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+			:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+			:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+			:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+			:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+        }
+        .btn {
+        	border-radius: 0;
+        	color: #29576b;
+        	margin-left: -4px;
+        }
+	}
+}
