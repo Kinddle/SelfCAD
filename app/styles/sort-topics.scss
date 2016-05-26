@@ -103,6 +103,9 @@
 			position: absolute;
 			left: -40px;
 		    margin-top: -40px;
+		    @media (min-width: 768px) and (max-width:1024px) {
+	    	    left: -24px;
+	        }
 		}
 	}
 	.list-group-item:first-child {
@@ -141,6 +144,9 @@
 		position: absolute;
 		left: -40px;
 	    margin-top: -40px;
+	    @media (min-width: 768px) and (max-width:1024px) {
+	    	left: -24px;
+	    }
 	}
 }
 .tags {

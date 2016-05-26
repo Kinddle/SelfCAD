@@ -9,6 +9,11 @@
         	margin-top: 4px;
         }
 	}
+	.collapse.in {
+		@media (min-width: 768px) and (max-width:1024px) {
+        	width: 100%;
+        }
+	}
 	.navbar {
 		border: none;
         padding: 10px 0;
@@ -84,13 +89,14 @@
 		.dropdown {
 			.dropdown-menu {
 				min-width: 100%;
-				padding: 8px 0 0 0;
+				padding: 0px 0 0 0;
 				border: none;
 				box-shadow: none;
 				li {
 					line-height: 36px;
+					display: inline-block;
 					a {
-                        
+                        display: inline-block;
 					}
 				}
 			}
@@ -107,10 +113,12 @@
 		.open {
 			.dropdown-menu {
 				li {
+					width: 100%;
 					a { 
 						line-height: 36px;
 					    height: 36px;
 						color: #12719a;
+						width: 100%;
 						&:hover,
 						&:focus {
 							background-color: #12719a;

@@ -36,4 +36,5 @@ $(document).on('ready', function() {
     // instead of a settings object
   ]
 });
+  $('.collapse').collapse();
 });

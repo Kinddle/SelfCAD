@@ -3,6 +3,7 @@
 	h4 {
 	    color: #fff;
 	    font-weight: 700;
+	    clear: both;
 	}
 	p, span {
 		color: #fff;
@@ -22,6 +23,12 @@
 	.quick-links {
 		list-style: none;
 		margin-left: 29%;
+		@media (min-width: 768px) and (max-width:1024px) {
+        	margin-left: 0;
+        	li {
+        		float: left;
+        	}
+        }
 		li {
 			a {
 				color: #fff;
