@@ -35,11 +35,12 @@
             height: 13px;
             left: 10px;
             top: 12px;
-            @media screen and (max-width: 480px) {
-        	top: 7px; }
-
         }
 	}
+}
+.table-responsive {
+	border: none;
+	margin-top: 20px;
 }
 .table {
 	thead {
@@ -87,11 +88,21 @@
 }
 .pop-topics {
 	margin-top: 37px;
+	@media (max-width:520px) {
+        width: 70%;
+    }
+	@media (min-width: 521px) and (max-width:991px) {
+	    width: 40%;
+	    margin-top: 0;
+	}
 	h4 {
 	    font-size: 18px;
 	    font-weight: 700;
     }
 	.list-group {
+		@media (max-width:991px) {
+	    position: relative;
+	    }
 		.list-group-item {
 			font-size: 12px;
 			color: #fff;
@@ -103,9 +114,6 @@
 			position: absolute;
 			left: -40px;
 		    margin-top: -40px;
-		    @media (min-width: 768px) and (max-width:1024px) {
-	    	    left: -24px;
-	        }
 		}
 	}
 	.list-group-item:first-child {
@@ -114,6 +122,18 @@
 }
 .updates {
 	margin-top: 70px;
+	@media (max-width:520px) {
+        width: 70%;
+    }
+	@media (min-width: 521px) and (max-width:991px) {
+	    width: 40%;
+	    margin-top: 50px;
+	}
+	.list-group {
+		@media (max-width:991px) {
+	        position: relative;
+	    }
+	}
 	h4 {
 	    font-size: 18px;
 	    font-weight: 700;
@@ -144,9 +164,6 @@
 		position: absolute;
 		left: -40px;
 	    margin-top: -40px;
-	    @media (min-width: 768px) and (max-width:1024px) {
-	    	left: -24px;
-	    }
 	}
 }
 .tags {

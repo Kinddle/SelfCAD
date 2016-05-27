@@ -24,6 +24,11 @@
         	}
         }
         .navbar-collapse {
+        	border-top: none;
+            box-shadow: none;
+            @media (min-width: 768px) {
+        		float: right;
+        	}
         	@media (min-width: 768px) and (max-width:991px) {
         		padding: 0;
         	}
@@ -31,6 +36,9 @@
         .collapse.in {
         	background-color: #12719a;
         	margin-top: 9px;
+        	z-index: 200;
+		    position: absolute;
+		    width: 100%;
             .open {
 				.dropdown-menu {
 					li {
@@ -146,6 +154,9 @@
         		font-size: 11px;
         		border-right: 1px solid #29566a;
         		width: 214px;
+        		@media (max-width:520px) {
+        			width: 190px;
+        		}
         		@media (min-width: 768px) and (max-width:991px) {
         		    width: 100%;
         	    }
